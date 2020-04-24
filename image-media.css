@@ -1,0 +1,58 @@
+@import "images.css";
+@media screen and (max-width: 701px) {
+
+    .newpage-container {
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 60px 400px 150px 150px 150px 150px 50px 50px;
+        grid-template-areas:
+        "hd"
+        "main"
+        "fr"
+        "sc"
+        "th"
+        "fo"
+        "bt"
+        "ft";
+        font-family: "libre baskerville", serif;
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    .pic1 {
+        grid-area: fr;
+    }
+
+    .pic2 {
+        grid-area: sc;
+    }
+
+    .pic3 {
+        grid-area: th;
+    }
+
+    .pic4 {
+        grid-area: fo;
+    }
+    
+    img {
+        width: 200px;
+        height: 150px;
+    }
+    
+    .newpage-header {
+        grid-area: hd;
+        text-align: center;
+    }
+    
+    .newpage-content {
+        grid-area: main;
+        text-align: center;
+    }
+    
+    .newpage-footer {
+        grid-area: ft;
+        text-align: center;
+    }
+    
+}

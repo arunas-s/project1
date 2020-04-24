@@ -1,0 +1,47 @@
+@media screen and (max-width: 701px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 60px 25px 600px 650px 50px;
+        grid-template-areas:
+        "hd hd"
+        "nav nav"
+        "main main"
+        "side side"
+        "ft ft";
+        font-family: "libre baskerville", serif;
+        font-size: 14px;
+        justify-content: center;
+    }
+    
+    header {
+        grid-area: hd;
+        text-align: center;
+    }
+    
+    nav {
+        grid-area: nav;
+        text-align: center;
+    }
+    
+    .content {
+        grid-area: main;
+        text-align: center;
+    }
+
+    .content ul{
+        text-align: start;
+    }
+    
+    .sidebar {
+        text-align: center;
+        grid-area: side;
+    }
+
+    .footer {
+        text-align: center;
+        grid-area: ft;
+    }
+    
+}
